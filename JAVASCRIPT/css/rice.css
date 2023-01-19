@@ -1,0 +1,533 @@
+body {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+}
+.topmenu{
+    height: 80px;
+    background-color: black;
+    
+}
+.topmenu h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: red;
+}
+.topmenu ul {
+    float: right;
+    list-style: none;
+    margin-right: 25px;
+}
+.topmenu ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 70px;
+    position: relative;
+}
+.topmenu ul li a {
+    position: relative;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.topmenu ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+.topmenu ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.first {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.first img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+    transition: 0.2s ease;
+}
+.first p {
+    color: white;
+    font-size: 14px;
+    margin-left: 45%;
+    text-transform: uppercase;
+}
+.first  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.price {
+    color: red;
+    margin-left: 20%;
+}
+button {
+    background: rgb(189, 16, 16);
+    border: none;
+    margin-left: 80%;
+    width: 100px;
+}
+button a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.second {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.second img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.second  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.second p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 45%;   
+}
+.third {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.third img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.third  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.third p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 45%;   
+}
+.fourth {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.fourth img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.fourth  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.fourth p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 45%;   
+}
+.fifth {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.fifth img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.fifth  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.fifth p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 45%;   
+}
+.sixth {
+    width: 650px;
+    height: 200px;
+    background: transparent;
+    border-radius: 20px;
+}
+.sixth img {
+    width: 250px;
+    height: 150px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.sixth  h1 {
+    margin-top: -20%;
+    margin-left: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    font-weight: bold;
+}
+.sixth p {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 45%;   
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+@media (max-width:900px) {
+    .topmenu h1 {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    .topmenu ul li {
+        margin: 0 20px;
+    }
+    .topmenu ul li a {
+        font-size: 15px;
+    }
+    .container {
+        padding: 0px 0px;
+        grid-column-gap: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .first {
+        width: 700px;
+        height: 200px;
+    }
+    .first img {
+        width: 250px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .first p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .first  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .second {
+        width: 700px;
+        height: 200px;
+    }
+    .second img {
+        width: 250px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .second p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .second  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .third {
+        width: 700px;
+        height: 200px;
+    }
+    .third img {
+        width: 200px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .third p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .third  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .fourth {
+        width: 700px;
+        height: 200px;
+    }
+    .fourth img {
+        width: 250px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .fourth p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .fourth  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .fifth {
+        width: 700px;
+        height: 200px;
+    }
+    .fifth img {
+        width: 250px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .fifth p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .fifth  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .sixth {
+        width: 700px;
+        height: 200px;
+    }
+    .sixth img {
+        width: 250px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .sixth p {
+        font-size: 10px;
+        margin-left: 45%;
+    }
+    .sixth  h1 {
+        margin-top: -12%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+}
+@media (max-width:700px) {
+    .checkbtn {
+        display: block;
+    }
+    .topmenu ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-color: black;
+        top: 50px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .topmenu ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .topmenu ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 0px;
+        grid-row-gap: 10px;
+    }
+    .first {
+        width: 400px;
+        height: 200px;
+    }
+    .first img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .first p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .first  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .second {
+        width: 400px;
+        height: 200px;
+    }
+    .second img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .second p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .second  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .third {
+        width: 400px;
+        height: 200px;
+    }
+    .third img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .third p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .third  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .fourth {
+        width: 400px;
+        height: 200px;
+    }
+    .fourth img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .fourth p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .fourth  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .fifth {
+        width: 400px;
+        height: 200px;
+    }
+    .fifth img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .fifth p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .fifth  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+    .sixth {
+        width: 400px;
+        height: 200px;
+    }
+    .sixth img {
+        width: 150px;
+        height: 100px;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+    .sixth p {
+        font-size: 10px;
+        margin-left: 40%;
+    }
+    .sixth  h1 {
+        margin-top: -20%;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
+
+}

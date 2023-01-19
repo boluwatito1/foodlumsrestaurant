@@ -1,0 +1,143 @@
+body {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+}
+.topmenu{
+    height: 80px;
+    background-color: black;
+    
+}
+.topmenu h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: red;
+}
+.topmenu ul {
+    float: right;
+    list-style: none;
+    margin-right: 25px;
+}
+.topmenu ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 70px;
+    position: relative;
+}
+.topmenu ul li a {
+    position: relative;
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.topmenu ul li a:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .4s linear;
+}
+.topmenu ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 10px;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+
+}
+.about {
+    width: 400px;
+}
+.contact {
+    width: 400px;
+}
+.location {
+    width: 400px;
+}
+.about h1 {
+    color: red;
+    text-transform: uppercase;
+}
+.about p {
+    color: white;
+    font-size: 20px;
+}
+.contact h1 {
+    color: red;
+    text-transform: uppercase;
+}
+.contact p {
+    color: white;
+    font-size: 20px;
+}
+.location h1 {
+    color: red;
+    text-transform: uppercase;
+}
+.location p {
+    color: white;
+    font-size: 20px;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check {
+    display: none;
+}
+
+@media (max-width:500px) {
+    .checkbtn {
+        display: block;
+    }
+    .topmenu ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-color: black;
+        top: 50px;
+        left: -110%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .topmenu ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .topmenu ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 0px;
+        grid-row-gap: 10px;
+    }
+}
